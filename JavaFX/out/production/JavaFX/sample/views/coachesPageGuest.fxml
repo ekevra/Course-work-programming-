@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<AnchorPane fx:id="textArea1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="700.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.coachesPageGuestController">
+    <children>
+        <ImageView fitHeight="497.0" fitWidth="806.0" layoutY="122.0" opacity="0.13" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../21.jpg" />
+            </image>
+        </ImageView>
+        <Label layoutX="9.0" layoutY="14.0" prefHeight="0.0" prefWidth="683.0" text="Специализированная детско-юношеская школа" textFill="WHITE">
+            <font>
+                <Font name="Microsoft YaHei UI Light" size="24.0" />
+            </font>
+        </Label>
+        <Label layoutX="199.0" layoutY="40.0" prefHeight="25.0" prefWidth="487.0" text="олимпийского резерва №3 города Гродно" textFill="WHITE">
+            <font>
+                <Font name="Microsoft JhengHei UI Light" size="24.0" />
+            </font>
+        </Label>
+        <SplitPane dividerPositions="0.4247538677918425" layoutX="-8.0" layoutY="90.0" prefHeight="367.0" prefWidth="713.0" style="-fx-background-color: #a6abbf;">
+            <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                    <children>
+                        <TableView fx:id="personTable" layoutX="7.0" layoutY="59.0" prefHeight="279.0" prefWidth="297.0" style="-fx-background-color: #a6abbf;">
+                            <columns>
+                                <TableColumn fx:id="firstNameColumn" prefWidth="119.0" text="Имя" />
+                                <TableColumn fx:id="lastNameColumn" prefWidth="191.0" text="Фамилия" />
+                            </columns>
+                        </TableView>
+                  <TextField fx:id="searchTextField" layoutX="14.0" layoutY="14.0" prefHeight="39.0" prefWidth="184.0" />
+                  <Button layoutX="207.0" layoutY="14.0" mnemonicParsing="false" onAction="#searchButtonAction" opacity="0.7" prefHeight="39.0" prefWidth="83.0" text="Поиск" />
+                    </children>
+                </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" opacity="0.61" prefHeight="333.0" prefWidth="396.0" style="-fx-background-color: #a6abbf;">
+                    <children>
+                        <Label layoutX="75.0" layoutY="11.0" text="Тренеры спортивной школы">
+                            <font>
+                                <Font name="Microsoft JhengHei UI Light" size="23.0" />
+                            </font>
+                        </Label>
+                        <HBox layoutX="1.0" layoutY="280.0" spacing="3.0" />
+                        <GridPane layoutX="1.0" layoutY="44.0" prefHeight="230.0" prefWidth="391.0" AnchorPane.bottomAnchor="65.0">
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="184.0" minWidth="10.0" prefWidth="128.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="266.0" minWidth="10.0" prefWidth="263.0" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                            <children>
+                                <Label text="Фамилия">
+                                    <font>
+                                        <Font name="Microsoft JhengHei UI" size="20.0" />
+                                    </font>
+                                </Label>
+                                <Label text="Имя" GridPane.rowIndex="1">
+                                    <font>
+                                        <Font name="Microsoft JhengHei UI" size="20.0" />
+                                    </font>
+                                </Label>
+                                <Label text="Отчество" GridPane.rowIndex="2">
+                                    <font>
+                                        <Font name="Microsoft JhengHei UI" size="20.0" />
+                                    </font>
+                                </Label>
+                                <Label text="Дата рождения" GridPane.rowIndex="3">
+                                    <font>
+                                        <Font name="Microsoft JhengHei UI" size="18.0" />
+                                    </font>
+                                </Label>
+                                <Label text="Отделение" GridPane.rowIndex="4">
+                                    <font>
+                                        <Font name="Microsoft JhengHei UI" size="20.0" />
+                                    </font>
+                                </Label>
+                                <Label text="Категория" GridPane.rowIndex="5">
+                                    <font>
+                                        <Font name="Microsoft JhengHei UI" size="20.0" />
+                                    </font>
+                                </Label>
+                                <Label fx:id="surnameLabel" prefHeight="32.0" prefWidth="259.0" text="Label" GridPane.columnIndex="1">
+                                    <font>
+                                        <Font name="System Bold" size="22.0" />
+                                    </font>
+                                </Label>
+                                <Label fx:id="nameLabel" prefHeight="32.0" prefWidth="289.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                    <font>
+                                        <Font name="System Bold" size="22.0" />
+                                    </font>
+                                </Label>
+                                <Label fx:id="otchLabel" prefHeight="32.0" prefWidth="258.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                    <font>
+                                        <Font name="System Bold" size="22.0" />
+                                    </font>
+                                </Label>
+                                <Label fx:id="birthdayLabel" prefHeight="32.0" prefWidth="253.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                    <font>
+                                        <Font name="System Bold" size="22.0" />
+                                    </font>
+                                </Label>
+                                <Label fx:id="typeOfSportLabel" prefHeight="32.0" prefWidth="266.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                                    <font>
+                                        <Font name="System Bold" size="20.0" />
+                                    </font>
+                                </Label>
+                                <Label fx:id="categoryLabel" prefHeight="36.0" prefWidth="294.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                                    <font>
+                                        <Font name="System Bold" size="22.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </GridPane>
+                          <Button fx:id="btnToFirstPage" layoutX="279.0" layoutY="300.0" mnemonicParsing="false" onAction="#btnToFirstPageAction" prefHeight="38.0" prefWidth="107.0" text="Назад">
+                              <font>
+                                  <Font name="Microsoft JhengHei UI Light" size="16.0" />
+                              </font>
+                          </Button>
+                    </children></AnchorPane>
+            </items>
+        </SplitPane>
+      <Label layoutX="14.0" layoutY="62.0" text="Гостевой режим" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold Italic" size="18.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

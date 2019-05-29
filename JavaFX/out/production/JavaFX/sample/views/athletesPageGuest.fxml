@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<AnchorPane fx:id="textArea1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="700.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.athletesPageGuestController">
+    <children>
+        <ImageView fitHeight="526.0" fitWidth="702.0" layoutY="93.0" opacity="0.13" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../21.jpg" />
+            </image>
+        </ImageView>
+        <Label layoutX="13.0" layoutY="20.0" prefHeight="0.0" prefWidth="683.0" text="Специализированная детско-юношеская школа" textFill="WHITE">
+            <font>
+                <Font name="Microsoft YaHei UI Light" size="24.0" />
+            </font>
+        </Label>
+        <Label layoutX="199.0" layoutY="52.0" prefHeight="25.0" prefWidth="487.0" text="олимпийского резерва №3 города Гродно" textFill="WHITE">
+            <font>
+                <Font name="Microsoft JhengHei UI Light" size="24.0" />
+            </font>
+        </Label>
+        <TableView fx:id="personTable" layoutX="114.0" layoutY="151.0" opacity="0.7" prefHeight="219.0" prefWidth="474.0">
+            <columns>
+                <TableColumn fx:id="lastNameColumn" prefWidth="265.0" text="Фамилия" />
+                <TableColumn fx:id="firstNameColumn" prefWidth="208.0" text="Имя" />
+            </columns>
+        </TableView>
+        <Label layoutX="157.0" layoutY="108.0" text="Все спортсмены спортивной школы" textFill="WHITE">
+            <font>
+                <Font name="Microsoft YaHei UI Light" size="22.0" />
+            </font>
+        </Label>
+        <HBox alignment="TOP_CENTER" layoutX="123.0" layoutY="386.0" opacity="0.7" spacing="10.0">
+            <children>
+                <Button layoutX="59.0" layoutY="387.0" mnemonicParsing="false" onAction="#btnWatchAction" prefHeight="39.0" prefWidth="138.0" text="Посмотреть" />
+            </children>
+        </HBox>
+          <Button layoutX="505.0" layoutY="386.0" mnemonicParsing="false" onAction="#btnBackAction" prefHeight="35.0" prefWidth="80.0" text="Назад" />
+      <Label layoutX="13.0" layoutY="58.0" text="Гостевой режим" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold Italic" size="18.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
